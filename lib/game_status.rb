@@ -53,6 +53,7 @@ end
 def winner(board)
   won?(board)
   return WIN_COMBINATIONS
+end
 =begin
 
 match[0] = [0, 1, 2]
