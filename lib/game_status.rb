@@ -34,7 +34,7 @@ end
 #scan board; return taken spaces; taken spaces = [0-8] -> full is true.
 
 def draw?(board)
-won?(board) && full?(board)
+!won?(board) && full?(board)
 end
 
 
