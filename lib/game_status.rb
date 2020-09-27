@@ -36,6 +36,10 @@ def won?(board)
   WIN_COMBINATIONS.find do |match| #go through each win combination array
 
   match == x_array || match == o_array
+if match == x_array 
+  return x_array
+elsif match == o_array
+  return o_array
 
     #if match == x_array || match == o_array #if the returned array matches win condition
 
