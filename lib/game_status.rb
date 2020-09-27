@@ -27,8 +27,10 @@ def won?(board)
 end
 
 def full?(board)
-board.all? do |taken|
-  position_taken?(board, taken)
+full_counter = 0
+board.each do |taken|
+  if position_taken?(board, taken)
+    counter += 1
 end
 end
 
