@@ -40,6 +40,7 @@ if match == x_array
   return x_array
 elsif match == o_array
   return o_array
+end
 
     #if match == x_array || match == o_array #if the returned array matches win condition
 
