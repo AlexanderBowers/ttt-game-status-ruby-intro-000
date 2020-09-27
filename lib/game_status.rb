@@ -51,12 +51,8 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)
-    return character
-  else
-    return nil
-  end
-end
+  won?(board)
+  return WIN_COMBINATIONS
 =begin
 
 match[0] = [0, 1, 2]
