@@ -34,6 +34,7 @@ match[2] = [6, 7, 8]
 board[0, 1, 2] == board[3, 4, 5] &&
 board [3, 4, 5] == board[7, 8, 9]
 position_taken?(board, [0, 1, 2])
+posi
 
 
 
