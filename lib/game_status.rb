@@ -27,6 +27,7 @@ def won?(board)
 end
 
 def full?(board)
+  spaces_taken = []
   board.select do |taken|
     spaces_taken << position_taken?(board, board[taken])
   end
