@@ -33,6 +33,10 @@ def draw?(board)
 end
 
 def over?(board)
+end
+
+def winner(board)
+end
 =begin
 
 match[0] = [0, 1, 2]
