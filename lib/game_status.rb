@@ -28,8 +28,8 @@ end
 
 def full?(board)
 board.each do |taken|
-  position_taken?(board, taken)
-  binding.pry
+  position_taken? (board, taken)
+
 end
 end
 
