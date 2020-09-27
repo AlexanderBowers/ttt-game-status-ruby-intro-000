@@ -28,7 +28,8 @@ end
 
 def full?(board)
 board.select do |taken|
-  taken << position_taken?(board, taken)
+  taken_array << position_taken?(board, taken)
+
 end
 #scan board; return taken spaces; taken spaces = [0-8] -> full is true.
 
