@@ -45,6 +45,7 @@ def won?(board)
   binding.pry
   return won
 end
+end
 
 
 #right now i'm returning an array and matching it to an array
