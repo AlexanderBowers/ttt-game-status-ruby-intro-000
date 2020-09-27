@@ -29,7 +29,7 @@ end
 def full?(board)
   spaces_taken = []
   board.select do |taken|
-    spaces_taken << position_taken?(board, )
+    spaces_taken << position_taken?(board,taken )
   end
 spaces_taken
 binding.pry
