@@ -29,6 +29,8 @@ end
 def full?(board)
 board.select do |taken|
   spaces_taken << position_taken?(board, board[taken])
+end
+spaces_taken
 
 
 end
