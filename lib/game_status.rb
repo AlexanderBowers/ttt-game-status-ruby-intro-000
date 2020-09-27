@@ -37,7 +37,7 @@ end
 
 
 
-=begindef won?(board)
+=begin def won?(board)
   won = false #declaring variable won
   x_array = [] #declaring array
   o_array = []
