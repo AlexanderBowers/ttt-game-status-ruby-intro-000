@@ -27,23 +27,15 @@ def won?(board)
 end
 
 def full?(board)
-full_counter = 0
-full = false
-board.each do |taken|
-  if position_taken?(board, taken)
-    counter += 1
-  end
+board.select do |taken|
+  taken << position_taken?(board, taken)
 end
-  if full_counter == 8
-    full = true
-  else
-    full = false
-  end
-end
+#scan board; return taken spaces; taken spaces = [0-8] -> full is true.
 
 def draw?(board)
-  draw == won?(board) && full?(board)
+
 end
+
 
 def over?(board)
 end
