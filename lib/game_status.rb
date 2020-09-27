@@ -27,10 +27,10 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do |taken|
-    position_taken?(board, board[taken])
-    binding.pry
-  end
+board.each do |taken|
+  position_taken?(board, taken[0])
+  binding.binding.pry
+end
 end
 
 def draw?(board)
