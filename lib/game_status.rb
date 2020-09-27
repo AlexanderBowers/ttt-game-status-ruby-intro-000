@@ -35,6 +35,7 @@ def won?(board)
   o_array
   WIN_COMBINATIONS.find do |match| #go through each win combination array
   match == x_array || match == o_array
+
     #if match == x_array || match == o_array #if the returned array matches win condition
 
     #  won = true #the match is won
@@ -43,8 +44,9 @@ def won?(board)
     #end
   #end
   #binding.pry
-  return won
   end
+  x_array
+  o_array
 end
 
 
