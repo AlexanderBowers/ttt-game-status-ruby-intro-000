@@ -29,10 +29,9 @@ end
 def full?(board)
 
   board.all? do |taken|
-    position_taken?(board, board[taken])
+    taken == "X" || taken == "O"
   end
-
-  end
+end
 spaces_taken
 end
 #scan board; return taken spaces; taken spaces = [0-8] -> full is true.
