@@ -51,7 +51,8 @@ def over?(board)
 end
 
 def winner(board, character)
-if won?(board) && position_taken(board, character)
+if won?(board) && position_taken?(board, character)
+  return character
 end
 end
 =begin
