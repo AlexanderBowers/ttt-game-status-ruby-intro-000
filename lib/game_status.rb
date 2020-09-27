@@ -27,13 +27,11 @@ def won?(board)
 end
 
 def full?(board)
-board.select do |taken|
-  spaces_taken << position_taken?(board, board[taken])
-end
+  board.select do |taken|
+    spaces_taken << position_taken?(board, board[taken])
+  end
 spaces_taken
 binding.pry
-
-
 end
 #scan board; return taken spaces; taken spaces = [0-8] -> full is true.
 
