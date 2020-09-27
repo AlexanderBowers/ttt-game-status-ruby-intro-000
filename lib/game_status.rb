@@ -50,8 +50,8 @@ def over?(board)
   end
 end
 
-def winner(board, character)
-  if won?(board) && position_taken?(board, character)
+def winner(board)
+  if won?(board)
     return character
   else
     return nil
