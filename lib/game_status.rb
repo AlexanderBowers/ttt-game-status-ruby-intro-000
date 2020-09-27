@@ -25,7 +25,16 @@ def won?(board)
     position_taken?(board, match[0])
   end
 end
+=begin
 
+match[0] = [0, 1, 2]
+match[1] = [3, 4, 5]
+match[2] = [6, 7, 8]
+
+board[0, 1, 2] == board[3, 4, 5] &&
+board [3, 4, 5] == board[7, 8, 9]
+position_taken?(board, [0, 1, 2])
+board[ = board[]]
 
 
 
