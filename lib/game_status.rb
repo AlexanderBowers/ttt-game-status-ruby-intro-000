@@ -22,7 +22,7 @@ def won?(board)
   WIN_COMBINATIONS.find do |match|
     board[match[0]] == board[match[1]] &&
     board[match[1]] == board[match[2]] &&
-    position_taken?(board, combo[0])
+    position_taken?(board, match[0])
   end
 end
 
