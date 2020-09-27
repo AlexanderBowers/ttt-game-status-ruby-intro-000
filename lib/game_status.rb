@@ -17,7 +17,27 @@ WIN_COMBINATIONS =
   [0, 4, 8],
   [2, 4, 6]
 ]
+
 def won?(board)
+  WIN_COMBINATIONS.detect do |combo|
+    board[combo[0]] == board[combo[1]] &&
+    board[combo[1]] == board[combo[2]] &&
+    position_taken?(board, combo[0])
+  end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+=begindef won?(board)
   won = false #declaring variable won
   x_array = [] #declaring array
   o_array = []
@@ -39,13 +59,13 @@ def won?(board)
         return x_array
     elsif match == o_array
     return o_array
+    end
 end
-
-  end
   x_array
   o_array
   binding.pry
 end
+=end
 
     #if match == x_array || match == o_array #if the returned array matches win condition
 
