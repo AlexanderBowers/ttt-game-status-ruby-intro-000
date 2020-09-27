@@ -28,7 +28,7 @@ end
 
 def full?(board)
 full_counter = 0
-full
+full = false
 board.each do |taken|
   if position_taken?(board, taken)
     counter += 1
