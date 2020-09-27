@@ -34,7 +34,8 @@ board.each do |taken|
     counter += 1
   end
 end
-
+if full_counter == 8
+  full = true
 end
 
 def draw?(board)
