@@ -53,6 +53,8 @@ end
 def winner(board, character)
   if won?(board) && position_taken?(board, character)
     return character
+  else
+    return nil
   end
 end
 =begin
