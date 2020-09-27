@@ -47,6 +47,7 @@ def won?(board)
   end
   x_array
   o_array
+  binding.pry
 end
 
 
