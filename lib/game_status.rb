@@ -50,8 +50,8 @@ def over?(board)
   end
 end
 
-def winner(board)
-if won?(board) &&
+def winner(board, character)
+if won?(board) && position_taken(board, character)
 end
 end
 =begin
