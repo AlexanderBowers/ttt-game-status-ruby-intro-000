@@ -27,7 +27,7 @@ def won?(board)
 end
 
 def full?(board)
-  
+
 =begin
 
 match[0] = [0, 1, 2]
