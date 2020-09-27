@@ -30,6 +30,8 @@ def full?(board)
 end
 
 def draw?(board)
+end
+
 =begin
 
 match[0] = [0, 1, 2]
