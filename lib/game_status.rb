@@ -38,7 +38,7 @@ if full_counter == 8
   full = true
 else
   full = false
-
+end
 end
 
 def draw?(board)
