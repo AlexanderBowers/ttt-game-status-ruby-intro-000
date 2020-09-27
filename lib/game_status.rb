@@ -31,18 +31,24 @@ def won?(board)
     o_array << o_counter if found_O == "O"
     o_counter += 1
   end
-  x_array #
+  x_array #array where x is found
   o_array
-  WIN_COMBINATIONS.each do |match|
-    if match == x_array || match == o_array
-      won = true
-    else
+  WIN_COMBINATIONS.find do |match| #go through each win combination array
+    if match == x_array || match == o_array #if the returned array matches win condition
+      won = true #the match is won
+    else #ok
       won = false
     end
   end
   binding.pry
   return won
 end
+
+
+#right now i'm returning an array and matching it to an array
+#then returning a true/false value.
+#the test wants me to return a set of chracters that can be made into an array
+#when i tried returning ['x','x','x'] won was returning false and got errors.
 
 #WIN_COMBINATIONS.each do |combination|
 #  if board[combination] == ["X", "X", "X"] || board[combination] == board[combination] == ["O", "O", "O"]
