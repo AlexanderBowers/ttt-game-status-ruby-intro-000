@@ -32,6 +32,7 @@ end
 def draw?(board)
 end
 
+def over?(board)
 =begin
 
 match[0] = [0, 1, 2]
