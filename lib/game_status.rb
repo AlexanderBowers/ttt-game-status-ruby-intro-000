@@ -47,7 +47,7 @@ def won?(board)
   #end
   #binding.pry
   end
-  
+
   binding.pry
 end
 
