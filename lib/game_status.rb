@@ -51,7 +51,7 @@ def over?(board)
 end
 
 def winner(board)
-  character = "X" #declaring a string
+  character = "X" #declaring a variable as a  string
   if  won?(board)
 
 
