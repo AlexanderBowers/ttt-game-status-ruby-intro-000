@@ -54,6 +54,7 @@ def winner(board)
   if  won?(board)
     board.find do |character|
       character = won?(board)
+      binding.pry
       return chracter
     end
   else return nil
