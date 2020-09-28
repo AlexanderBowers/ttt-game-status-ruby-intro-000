@@ -51,7 +51,8 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board)
+if  won?(board)
+else return nil
   return WIN_COMBINATIONS
 end
 =begin
