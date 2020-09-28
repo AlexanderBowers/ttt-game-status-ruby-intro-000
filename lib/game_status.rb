@@ -60,6 +60,11 @@ def winner(board)
   else return nil
   end
 end
+
+#We have determined that the board is occupied
+#We matched the occupied spaces match a win condition
+#I need to know determine which win condition was triggered
+#then search the board for that index
 =begin
 
 match[0] = [0, 1, 2]
