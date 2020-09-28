@@ -52,8 +52,9 @@ end
 
 def winner(board, index)
 if  won?(board)
+  return index
 else return nil
-  return WIN_COMBINATIONS
+
 end
 =begin
 
