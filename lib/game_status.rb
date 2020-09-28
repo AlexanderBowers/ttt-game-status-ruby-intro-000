@@ -52,7 +52,9 @@ end
 
 def winner(board)
 if  won?(board)
-  board.find |character|
+  board.find |character| do
+    character = won?(board)
+  end
 
 else return nil
 end
