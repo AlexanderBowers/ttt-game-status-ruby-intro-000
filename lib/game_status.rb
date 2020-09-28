@@ -54,7 +54,7 @@ def winner(board, index)
 if  won?(board)
   return index
 else return nil
-
+end
 end
 =begin
 
