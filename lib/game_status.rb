@@ -50,7 +50,7 @@ def over?(board)
   end
 end
 
-def winner(board, index)
+def winner(board)
 if  won?(board)
   return index
 else return nil
