@@ -51,12 +51,13 @@ def over?(board)
 end
 
 def winner(board)
-if  won?(board)
-  board.find |character| do
-    character = won?(board)
-    return chracter
+  if  won?(board)
+    board.find |character| do
+      character = won?(board)
+      return chracter
   else return nil
   end
+end
 
 else return nil
 end
