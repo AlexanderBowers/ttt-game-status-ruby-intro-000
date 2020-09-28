@@ -52,7 +52,6 @@ end
 
 def winner(board)
   character = "X" #declaring a variable as a string
-  won?(board).find do |character|
 
   else return nil
   end
