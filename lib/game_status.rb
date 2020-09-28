@@ -54,7 +54,7 @@ end
 def winner(board)
   if combo_array = won?(board)
     #no iterations here
-    index = combo_array)[0]
+    index = combo_array[0]
     return board[index]
   end
 end
