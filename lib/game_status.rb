@@ -50,16 +50,21 @@ def over?(board)
   end
 end
 
-def winner(board)
 
+def winner(board)
+  if combo_array = won?(board)
+    #no iterations here
+    index = combo_array)[0]
+    return board[index]
+  end
+end
+=begin def winner(board)
   won?(board).find do |index|
     index = won?(board)[0]
     return board[index]
-#if won?(board)
-  #else return nil
   end
 end
-
+=end
 #We have determined that the board is occupied
 #We matched the occupied spaces match a win condition
 #I need to know determine which win condition was triggered
