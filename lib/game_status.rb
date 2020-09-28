@@ -51,9 +51,12 @@ def over?(board)
 end
 
 def winner(board)
-  character = "X" #declaring a variable as a string
 
-  else return nil
+  won?(board).find do |index|
+    index = won?(board)[0]
+    return board[index]
+#if won?(board)
+  #else return nil
   end
 end
 
