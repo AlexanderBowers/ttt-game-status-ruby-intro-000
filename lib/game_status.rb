@@ -56,7 +56,6 @@ def winner(board)
       character = won?(board)
       return chracter
     end
-  else return nil
   end
 end
 
